@@ -29,7 +29,8 @@ SETTINGS
 -  ``COMPRESS_AUTOPREFIXER_ARGS`` - arguments for cli tool (see
    ``autoprefixer --help``)
 
-LICENCE ——-
+LICENCE
+-------
 
 MIT License
 
