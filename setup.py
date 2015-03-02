@@ -9,7 +9,7 @@ setup(
     version='0.0.1',
     author='Yuri Shikanov',
     author_email='dizballanze@gmail.com',
-    packages=['filter'],
+    py_modules=['filter'],
     # scripts=[],
     url='https://github.com/dizballanze/django-compressor-autoprefixer',
     license='MIT',
