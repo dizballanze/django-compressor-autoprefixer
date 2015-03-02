@@ -9,6 +9,6 @@ COMPRESS_AUTOPREFIXER_ARGS = ""
 class AutoprefixerFilter(CompilerFilter):
     command = "{binary} {args}"
     options = (
-        ("binary", settings.COMPRESS_AUTOPREFIXER_BINARY or COMPRESS_AUTOPREFIXER_BINARY),
-        ("args", settings.COMPRESS_AUTOPREFIXER_ARGS or COMPRESS_AUTOPREFIXER_ARGS),
+        ("binary", getattr(settings, "COMPRESS_AUTOPREFIXER_BINARY", COMPRESS_AUTOPREFIXER_BINARY)),
+        ("args", getattr(settings, "COMPRESS_AUTOPREFIXER_ARGS", COMPRESS_AUTOPREFIXER_ARGS)),
     )
