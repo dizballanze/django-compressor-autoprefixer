@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name='django-compressor-autoprefixer',
-    version='0.0.1',
+    version='0.0.2',
     author='Yuri Shikanov',
     author_email='dizballanze@gmail.com',
     packages=['django_compressor_autoprefixer'],
