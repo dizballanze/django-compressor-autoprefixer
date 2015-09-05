@@ -2,11 +2,11 @@ from setuptools import setup
 import os
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+    return open(os.path.join(os.path.dirname(__file__), fname), encoding="UTF-8").read()
 
 setup(
     name='django-compressor-autoprefixer',
-    version='0.0.2',
+    version='0.1.0',
     author='Yuri Shikanov',
     author_email='dizballanze@gmail.com',
     packages=['django_compressor_autoprefixer'],

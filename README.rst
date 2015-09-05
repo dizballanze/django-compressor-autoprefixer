@@ -1,14 +1,23 @@
 Django-Compressor-Autoprefixer
 ==============================
 
-Django-Compressor-Autoprefixer is using `postcss/autoprefixer`_ cli.
+Django-Compressor-Autoprefixer is using `code42day/postcss-cli`_ with `postcss/autoprefixer`_ plugin.
 
 INSTALLATION
 ------------
 
+Python package:
+
 ::
 
     pip install django-compressor-autoprefixer
+
+Node modules:
+
+::
+
+    npm install -g postcss-cli autoprefixer
+
 
 USAGE
 -----
@@ -25,9 +34,9 @@ SETTINGS
 --------
 
 -  ``COMPRESS_AUTOPREFIXER_BINARY`` - path autoprefixer binary (if it
-   not in ``PATH`` environment variable)
+   not in ``PATH`` environment variable). Default: ``postcss``.
 -  ``COMPRESS_AUTOPREFIXER_ARGS`` - arguments for cli tool (see
-   ``autoprefixer --help``)
+   ``postcss --help``). Default: ``--use autoprefixer``
 
 LICENCE
 -------
@@ -56,3 +65,4 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 .. _postcss/autoprefixer: https://github.com/postcss/autoprefixer
+.. _code42day/postcss-cli: https://github.com/code42day/postcss-cli
