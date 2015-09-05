@@ -1,8 +1,9 @@
 from setuptools import setup
 import os
+import io
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname), encoding="UTF-8").read()
+    return io.open(os.path.join(os.path.dirname(__file__), fname), encoding="UTF-8").read()
 
 setup(
     name='django-compressor-autoprefixer',
